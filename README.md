@@ -230,7 +230,7 @@ Any argument passed in the command line will override the settings inside the `c
 
 ### Fields
 
-Here's a list of the available fields inside the `conf.toml` file.
+Here is a list of the available fields inside the `conf.toml` file.
 
 | Field                     | Description                                | Possible values                    | Default      |
 | ------------------------- | ------------------------------------------ | ---------------------------------- | ------------ | 
@@ -272,7 +272,8 @@ The default configuration can be found [here](public/default.toml).
 ## Contributing
 
 Feel free to report bugs, suggest features or contribute code.  
-Any help is appreciated!
+Note that `clock-rs` is intentionally minimal. Features that go beyond  
+displaying time are unlikely to be added, although this can always be discussed.
 
 ## License
 
