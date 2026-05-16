@@ -7,7 +7,7 @@ use serde::Deserialize;
 use crate::{color::Color, position::Position};
 
 #[derive(Parser)]
-#[clap(version = "v0.2.0, (c) 2024 Oughie", hide_possible_values = true, styles = Self::STYLES)]
+#[clap(version = "v0.2.1, (c) 2024 Oughie", hide_possible_values = true, styles = Self::STYLES)]
 pub struct Args {
     #[clap(subcommand)]
     pub mode: Option<Mode>,
