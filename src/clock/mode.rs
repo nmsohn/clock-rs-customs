@@ -1,6 +1,7 @@
-use crate::error::Error;
-
-use super::{counter::Counter, time_zone::TimeZone};
+use crate::{
+    clock::{counter::Counter, time_zone::TimeZone},
+    error::Error,
+};
 
 pub enum ClockMode {
     Counter(Counter),

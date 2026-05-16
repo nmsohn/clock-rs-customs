@@ -40,7 +40,7 @@ impl State {
         let mut config = Config::parse()?;
         let mode = args.mode.clone();
 
-        args.overwrite(&mut config);
+        args.overwrite(&mut config)?;
 
         let clock_mode = Self::clock_mode(mode, &config)?;
         let mut clock = Clock::new(config, clock_mode);

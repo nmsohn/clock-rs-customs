@@ -1,7 +1,8 @@
 use std::fmt::Write;
 
-use crate::error::Error;
 use chrono::{Local, Timelike, Utc};
+
+use crate::error::Error;
 
 pub enum TimeZone {
     Local,

@@ -1,7 +1,6 @@
 pub mod args;
 
-use {super::config::Config, args::Args};
-use crate::error::Error;
+use crate::{cli::args::Args, config::Config, error::Error};
 
 impl Args {
     pub fn overwrite(self, config: &mut Config) -> Result<(), Error> {
@@ -13,6 +12,7 @@ impl Args {
             if interval == 0 {
                 return Err(Error::ZeroInterval);
             }
+
             config.general.interval = interval;
         }
 
