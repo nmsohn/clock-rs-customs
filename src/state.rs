@@ -202,12 +202,6 @@ impl State {
     }
 
     fn render(&self) -> Result<(), Error> {
-        let (width, height) = terminal::size()?;
-
-        if self.clock.is_too_large(width, height) {
-            return Ok(());
-        }
-
         let mut stdout = io::stdout();
 
         execute!(stdout, MoveTo(0, self.clock.padding.top))?;
